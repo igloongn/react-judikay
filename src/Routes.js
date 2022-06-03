@@ -4,6 +4,7 @@ import React from 'react'
 import Home from './Home';
 import { Routes, Route, Link } from "react-router-dom";
 import { Products } from './Products';
+import { Detail } from './details';
 
 
 const MyRoutes = () => {
@@ -11,7 +12,7 @@ const MyRoutes = () => {
         <Routes>
             <Route index element={<Home />} />
             <Route path='/products' element={<Products />} />
-            <Route path='/detail' element={<Home />} />
+            <Route path='/details/:id' element={<Detail />} />
             
         </Routes>
     )
